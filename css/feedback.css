@@ -1,0 +1,144 @@
+/* Styles */
+.feedback-page {
+    max-width: 560px;
+    padding: 40px 0;
+}
+
+.feedback-title {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.feedback-form {
+    background: #fffdf6;
+    border: 1px solid #e3dcc6;
+    border-radius: 14px;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+.field-label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 14px 0 6px;
+    padding: 0;
+}
+
+.field {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #e3dcc6;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+.stars-box {
+    border: 0;
+    padding: 0;
+    margin: 14px 0 0;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 1;
+    color: #d8d2bd;
+    cursor: pointer;
+}
+
+.star-on {
+    color: #e0a020;
+}
+
+.rating-text {
+    font-size: 12px;
+    color: #6b7468;
+}
+
+.char-count {
+    display: block;
+    font-size: 12px;
+    color: #6b7468;
+    margin-top: 4px;
+}
+
+.error-msg {
+    display: block;
+    font-size: 12px;
+    color: #b3261e;
+    min-height: 16px;
+    margin-top: 4px;
+}
+
+.success-msg {
+    font-size: 14px;
+    color: #1b4332;
+    font-weight: bold;
+    margin: 12px 0 0;
+}
+
+.list-title {
+    font-size: 26px;
+    margin: 34px 0 12px;
+}
+
+.feedback-item {
+    background: #fffdf6;
+    border: 1px solid #e3dcc6;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+}
+
+.feedback-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.feedback-stars {
+    color: #e0a020;
+}
+
+.feedback-meta {
+    font-size: 12px;
+    color: #6b7468;
+    margin: 0;
+}
+
+.feedback-text {
+    margin: 6px 0 8px;
+}
+
+.remove-btn {
+    background: none;
+    border: 1px solid #b3261e;
+    color: #b3261e;
+    border-radius: 14px;
+    padding: 3px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.empty-text {
+    color: #6b7468;
+    font-size: 14px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 600px) {
+    .feedback-title {
+        font-size: 30px;
+    }
+}

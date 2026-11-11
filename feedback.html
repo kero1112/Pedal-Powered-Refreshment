@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback · Pedal-Powered Refreshment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap header-box">
+      <a class="logo" href="index.html"><img class="logo-img" src="images/logo.svg" alt=""><span><strong class="logo-name">Pedal-Powered</strong><small class="logo-sub">REFRESHMENT</small></span></a>
+      <nav>
+        <a class="nav-link" href="index.html#menu">The menu</a>
+        <a class="nav-link" href="index.html#how">How to order</a>
+        <a class="nav-link" href="index.html#about">About Us</a>
+        <a class="nav-link nav-active" href="feedback.html">Feedback</a>
+        <a class="btn order-btn" href="order.html">Your order (<span class="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap feedback-page">
+    <p class="eyebrow">We’re listening</p>
+
+    <h1 class="feedback-title">How was your sip?</h1>
+
+    <p class="muted">Tell us what you loved, what we can improve, or which flavor you want next.</p>
+
+    <form id="feedbackForm" class="feedback-form">
+      <label class="field-label" for="fbName">Name</label>
+      <input class="field" type="text" id="fbName" name="name" required minlength="3" maxlength="40" placeholder="Juan Dela Cruz">
+      <span class="error-msg" id="nameError"></span>
+      <label class="field-label" for="fbEmail">Email (optional)</label>
+      <input class="field" type="email" id="fbEmail" name="email" placeholder="juan@email.com">
+      <span class="error-msg" id="emailError"></span>
+      <label class="field-label" for="fbTopic">What is this about?</label>
+      <select class="field" id="fbTopic" name="topic"><option>A drink I tried</option><option>The website</option><option>Ordering on Facebook</option><option>A flavor suggestion</option><option>Something else</option></select>
+      <fieldset class="stars-box">
+        <legend class="field-label">Your rating</legend>
+        <div class="stars">
+          <button type="button" class="star" aria-label="1 star">★</button>
+          <button type="button" class="star" aria-label="2 star">★</button>
+          <button type="button" class="star" aria-label="3 star">★</button>
+          <button type="button" class="star" aria-label="4 star">★</button>
+          <button type="button" class="star" aria-label="5 star">★</button>
+        </div>
+        <span class="rating-text" id="ratingText"></span>
+      </fieldset>
+      <label class="field-label" for="fbMessage">Your message</label>
+      <textarea class="field" id="fbMessage" name="message" rows="5" required minlength="10" maxlength="600" placeholder="Tell us about your cup..."></textarea>
+      <span class="char-count" id="charCount">600 characters left</span>
+      <span class="error-msg" id="messageError"></span>
+      <button type="submit" class="btn btn-full">Send feedback</button>
+      <p class="success-msg" id="formMessage"></p>
+    </form>
+
+    <h2 class="list-title">What our sippers said</h2>
+
+    <div id="feedbackList"></div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-box"><span>© 2026 Pedal-Powered Refreshment</span><span>Sample menu pricing in PHP · A neighborhood tea-bar concept</span></div>
+  </footer>
+
+  <script src="javascript/cart.js"></script>
+  <script src="javascript/feedback.js"></script>
+</body>
+</html>

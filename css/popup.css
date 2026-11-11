@@ -1,0 +1,270 @@
+/* Styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 40, 30, 0.6);
+    z-index: 100;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.show {
+    display: block;
+}
+
+.popup {
+    background: #fffdf6;
+    border-radius: 18px;
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 26px;
+    position: relative;
+}
+
+.popup-title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e3dcc6;
+    background: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.popup-body {
+    display: flex;
+    gap: 22px;
+}
+
+.popup-photo {
+    width: 42%;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.popup-text {
+    flex: 1;
+}
+
+.popup-name {
+    font-size: 26px;
+}
+
+.popup-p {
+    margin: 4px 0;
+}
+
+.tag {
+    font-size: 9px;
+    letter-spacing: 1px;
+    background: #dbe6cf;
+    color: #1b4332;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.allergy {
+    background: #dbe6cf;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+}
+
+.allergy-title {
+    display: block;
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 14px 0 0;
+}
+
+.popup-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #e3dcc6;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.order-body {
+    display: flex;
+    gap: 22px;
+}
+
+.order-left {
+    width: 36%;
+}
+
+.order-photo {
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.order-name {
+    font-size: 24px;
+}
+
+.order-right {
+    flex: 1;
+}
+
+.group {
+    border: 0;
+    padding: 0;
+    margin: 0 0 14px;
+}
+
+.group-legend {
+    padding: 0;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.group-hint {
+    float: right;
+    font-weight: normal;
+    color: #6b7468;
+}
+
+.option {
+    display: block;
+    padding: 9px 12px;
+    border: 1px solid #e3dcc6;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 13px;
+}
+
+.option-small {
+    display: block;
+    color: #6b7468;
+    margin-left: 22px;
+}
+
+.selected {
+    background: #dbe6cf;
+    border-color: #1b4332;
+    font-weight: bold;
+}
+
+.selected-dark {
+    background: #1b4332;
+    border-color: #1b4332;
+    color: #fff;
+    font-weight: bold;
+}
+
+.size-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.addon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.sugar-list {
+    display: flex;
+    gap: 6px;
+}
+
+.pill {
+    flex: 1;
+    text-align: center;
+    padding: 9px 4px;
+}
+
+.sugar-text {
+    font-size: 12px;
+    color: #6b7468;
+    margin: 6px 0 0;
+}
+
+.qty-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e3dcc6;
+    padding-top: 12px;
+}
+
+.qty-small {
+    display: block;
+    color: #6b7468;
+    font-size: 12px;
+}
+
+.qty-input {
+    width: 46px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #e3dcc6;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.sum-text {
+    display: block;
+    font-size: 12px;
+    color: #6b7468;
+}
+
+.total-text {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: #1b4332;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 700px) {
+    .popup {
+        padding: 18px;
+        margin: 10px auto;
+    }
+
+    .popup-body, .order-body {
+        flex-direction: column;
+    }
+
+    .popup-photo, .order-left {
+        width: 100%;
+    }
+
+    .popup-footer {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .size-list, .addon-list {
+        grid-template-columns: 1fr;
+    }
+}

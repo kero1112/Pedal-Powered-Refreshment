@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your order · Pedal-Powered Refreshment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap header-box">
+      <a class="logo" href="index.html"><img class="logo-img" src="images/logo.svg" alt=""><span><strong class="logo-name">Pedal-Powered</strong><small class="logo-sub">REFRESHMENT</small></span></a>
+      <nav>
+        <a class="nav-link" href="index.html#menu">The menu</a>
+        <a class="nav-link" href="index.html#how">How to order</a>
+        <a class="nav-link" href="index.html#about">About Us</a>
+        <a class="nav-link" href="feedback.html">Feedback</a>
+        <a class="btn order-btn" href="order.html">Your order (<span class="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap order-page">
+    <div class="top-row">
+      <a class="back-link" href="index.html#menu">← Back to the menu</a>
+      <p class="steps-text">01 Pick your drinks › <strong>02 Review &amp; save</strong> › 03 Send on Facebook</p>
+    </div>
+
+    <p class="eyebrow">One last look before you sip</p>
+
+    <h1 class="order-title">Your happy little line-up.</h1>
+
+    <p class="muted">Check your cups, save the image, then send it to our Facebook page.</p>
+
+    <div class="order-layout">
+      <div class="order-main">
+        <div class="order-card">
+          <h2 class="order-card-title">The good stuff <small class="order-count" id="drinkCount"></small></h2>
+          <div id="orderLines"></div>
+        </div>
+        <div class="order-card">
+          <div class="sum-row"><span>Drinks · before extra add-ons</span><strong id="drinksTotal"></strong></div>
+          <div class="sum-row"><span id="addonsText"></span><strong id="addonsTotal"></strong></div>
+          <div class="sum-row sum-big"><span>Estimated total</span><span id="grandTotal"></span></div>
+          <p class="note">No payment collected here. The store confirms the final total and any pickup or delivery arrangements in Facebook chat.</p>
+        </div>
+        <div class="notice"><strong>A download isn’t an order. A chat makes it happen.</strong><br>Send your saved image to the Pedal-Powered Refreshment Facebook page and wait for the store to confirm before paying or heading over.</div>
+      </div>
+      <div class="order-side">
+        <div class="side-top">
+          <p class="eyebrow">Your order picture</p>
+          <span class="badge">Draft · Not sent to store</span>
+        </div>
+        <p class="small muted">PNG · Share-ready preview</p>
+        <div class="picture">
+          <div class="picture-logo"><img class="logo-img" src="images/logo.svg" alt=""><span><strong class="logo-name">Pedal-Powered</strong><small class="logo-sub">REFRESHMENT</small></span></div>
+          <h3 class="picture-title">My happy order</h3>
+          <p class="picture-small" id="pictureInfo"></p>
+          <div id="pictureLines"></div>
+          <div class="picture-total"><span>Estimated total</span><strong class="picture-amount" id="pictureTotal"></strong></div>
+          <p class="note"><strong>Send to Pedal-Powered Refreshment on Facebook.</strong> Not a confirmed order. Please confirm availability, final price, payment and pickup in chat. Sample menu pricing in PHP.</p>
+        </div>
+        <button type="button" class="btn btn-full btn-space" id="downloadBtn">Download order image</button><button type="button" class="btn btn-outline btn-full btn-space" id="facebookBtn">Send to Facebook</button>
+        <p class="note">Save first, then attach the image in your Facebook message. Your email and password are never included.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-box"><span>© 2026 Pedal-Powered Refreshment</span><span>Sample menu pricing in PHP · A neighborhood tea-bar concept</span></div>
+  </footer>
+
+  <script src="javascript/cart.js"></script>
+  <script src="javascript/order.js"></script>
+</body>
+</html>
